@@ -39,8 +39,8 @@ const AboutSection = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="text-primary font-medium tracking-widest uppercase text-sm">
-              Sobre Nós
+          <span className="text-primary font-medium tracking-widest uppercase text-sm">
+              Sobre a Profissional
             </span>
             <h2 className="heading-section text-foreground mt-3 mb-6">
               Conheça Stella Souza
@@ -51,8 +51,8 @@ const AboutSection = () => {
               exclusivas que valorizam os traços únicos de cada cliente.
             </p>
             <p className="text-body mb-8">
-              No <strong className="text-foreground">Studio Stella Souza</strong>, 
-              acreditamos que a beleza vai além da aparência — é sobre como você se 
+              No <strong className="text-foreground">Estúdio Sobrancelhas Perfeitas</strong>, 
+              acreditamos que a beleza vai além da aparência — é sobre como você se
               sente. Cada procedimento é realizado com dedicação, usando produtos de 
               alta qualidade e técnicas atualizadas para garantir resultados que 
               superam expectativas.
