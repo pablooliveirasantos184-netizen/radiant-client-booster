@@ -45,8 +45,10 @@ const Header = () => {
             <img 
               src={logoStella} 
               alt="Logo Estúdio Sobrancelhas Perfeitas" 
-              className={`h-20 md:h-24 w-auto object-contain transition-all duration-300 drop-shadow-lg ${
-                isScrolled ? 'brightness-0' : 'brightness-0 invert drop-shadow-[0_2px_10px_rgba(255,255,255,0.3)]'
+              className={`h-28 md:h-36 w-auto object-contain transition-all duration-300 ${
+                isScrolled 
+                  ? 'brightness-0 drop-shadow-md' 
+                  : 'brightness-0 invert drop-shadow-[0_4px_20px_rgba(255,255,255,0.5)] [filter:brightness(0)_invert(1)_drop-shadow(0_0_15px_rgba(255,255,255,0.8))]'
               }`}
             />
           </a>
