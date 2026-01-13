@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { MapPin, Phone, Clock, Instagram, Facebook, Send, CheckCircle } from 'lucide-react';
+import { MapPin, Phone, Clock, Instagram, Facebook, Send, CheckCircle, CalendarClock } from 'lucide-react';
 
 const ContactSection = () => {
   const ref = useRef(null);
@@ -48,7 +48,7 @@ const ContactSection = () => {
       link: 'https://www.google.com/maps/search/?api=1&query=R.+Primeiro+de+Março,+129+-+Caiçara,+Cabo+Frio+-+RJ,+28905-130',
     },
     {
-      icon: Clock,
+      icon: CalendarClock,
       title: 'Horário',
       value: 'Seg à Sex: 10h às 19h',
       link: null,
@@ -115,7 +115,22 @@ const ContactSection = () => {
                                       ? 'bg-primary text-primary-foreground' 
                                       : 'bg-primary/10'
                                   }`}>
-                      <info.icon className={isHorario ? '' : 'text-primary'} size={20} />
+                      {isHorario ? (
+                        <motion.div
+                          animate={{ 
+                            scale: [1, 1.1, 1],
+                          }}
+                          transition={{ 
+                            duration: 2, 
+                            repeat: Infinity,
+                            ease: "easeInOut"
+                          }}
+                        >
+                          <info.icon size={22} />
+                        </motion.div>
+                      ) : (
+                        <info.icon className="text-primary" size={20} />
+                      )}
                     </div>
                     <div className="min-w-0 flex-1">
                       <p className={`text-xs md:text-sm ${isHorario ? 'text-primary font-medium' : 'text-muted-foreground'}`}>
