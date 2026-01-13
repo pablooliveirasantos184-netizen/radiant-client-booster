@@ -40,7 +40,7 @@ const HeroSection = () => {
           <img 
             src={logoStella} 
             alt="Logo Estúdio Sobrancelhas Perfeitas" 
-            className="h-32 sm:h-40 md:h-48 lg:h-56 w-auto object-contain brightness-0 invert drop-shadow-[0_4px_25px_rgba(255,255,255,0.6)]"
+            className="h-24 sm:h-28 md:h-32 lg:h-40 w-auto object-contain brightness-0 invert drop-shadow-[0_4px_25px_rgba(255,255,255,0.6)]"
           />
         </motion.div>
 
