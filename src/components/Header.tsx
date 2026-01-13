@@ -33,23 +33,21 @@ const Header = () => {
         }`}
       >
         <div className="container-custom flex items-center justify-between">
-          {/* Logo - Left Side, Larger */}
+          {/* Logo - Only visible when scrolled */}
           <a
             href="#home"
             onClick={(e) => {
               e.preventDefault();
               scrollToSection('#home');
             }}
-            className="relative z-10 flex items-center"
+            className={`relative z-10 flex items-center transition-all duration-500 ${
+              isScrolled ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4 pointer-events-none'
+            }`}
           >
             <img 
               src={logoStella} 
               alt="Logo Estúdio Sobrancelhas Perfeitas" 
-              className={`h-28 md:h-36 w-auto object-contain transition-all duration-300 ${
-                isScrolled 
-                  ? 'brightness-0 drop-shadow-md' 
-                  : 'brightness-0 invert drop-shadow-[0_4px_20px_rgba(255,255,255,0.5)] [filter:brightness(0)_invert(1)_drop-shadow(0_0_15px_rgba(255,255,255,0.8))]'
-              }`}
+              className="h-16 md:h-20 w-auto object-contain brightness-0 drop-shadow-md"
             />
           </a>
 
