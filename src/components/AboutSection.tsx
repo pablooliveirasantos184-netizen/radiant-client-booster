@@ -83,7 +83,7 @@ const AboutSection = () => {
             </div>
 
             <a
-              href="https://wa.me/5522992497973?text=Olá, Stella! Vim pelo site e quero conhecer melhor o studio. Pode me contar mais?"
+              href="https://wa.me/5522992497973?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20no%20Estúdio%20Sobrancelhas%20Perfeitas.%20Poderia%20me%20passar%20mais%20informações,%20por%20favor?"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary inline-block"
