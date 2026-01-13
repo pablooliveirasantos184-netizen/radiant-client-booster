@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import heroImage from '@/assets/hero-beauty.jpg';
+import logoStella from '@/assets/logo-stella.png';
 
 const HeroSection = () => {
   const scrollToServices = () => {
@@ -29,6 +30,20 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container-custom text-center px-6 md:px-4">
+        {/* Logo centralizada */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="flex justify-center mb-6 md:mb-8"
+        >
+          <img 
+            src={logoStella} 
+            alt="Logo Estúdio Sobrancelhas Perfeitas" 
+            className="h-32 sm:h-40 md:h-48 lg:h-56 w-auto object-contain brightness-0 invert drop-shadow-[0_4px_25px_rgba(255,255,255,0.6)]"
+          />
+        </motion.div>
+
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
