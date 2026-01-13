@@ -98,29 +98,52 @@ const ContactSection = () => {
             </h3>
 
             <div className="space-y-5 md:space-y-6 mb-8 md:mb-10">
-              {contactInfo.map((info) => (
-                <div key={info.title} className="flex items-start gap-3 md:gap-4">
-                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-primary/10 flex items-center 
-                                justify-center flex-shrink-0">
-                    <info.icon className="text-primary" size={20} />
+              {contactInfo.map((info) => {
+                const isHorario = info.title === 'Horário';
+                return (
+                  <div 
+                    key={info.title} 
+                    className={`flex items-start gap-3 md:gap-4 ${
+                      isHorario 
+                        ? 'bg-primary/10 border border-primary/20 rounded-2xl p-4 md:p-5' 
+                        : ''
+                    }`}
+                  >
+                    <div className={`w-10 h-10 md:w-12 md:h-12 rounded-xl flex items-center 
+                                  justify-center flex-shrink-0 ${
+                                    isHorario 
+                                      ? 'bg-primary text-primary-foreground' 
+                                      : 'bg-primary/10'
+                                  }`}>
+                      <info.icon className={isHorario ? '' : 'text-primary'} size={20} />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <p className={`text-xs md:text-sm ${isHorario ? 'text-primary font-medium' : 'text-muted-foreground'}`}>
+                        {info.title}
+                      </p>
+                      {info.link ? (
+                        <a
+                          href={info.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-foreground font-medium hover:text-primary transition-colors text-sm md:text-base break-words"
+                        >
+                          {info.value}
+                        </a>
+                      ) : (
+                        <p className={`font-semibold text-sm md:text-base ${isHorario ? 'text-foreground text-base md:text-lg' : 'text-foreground'}`}>
+                          {info.value}
+                        </p>
+                      )}
+                      {isHorario && (
+                        <p className="text-xs text-muted-foreground mt-1">
+                          Agende seu horário com antecedência
+                        </p>
+                      )}
+                    </div>
                   </div>
-                  <div className="min-w-0 flex-1">
-                    <p className="text-muted-foreground text-xs md:text-sm">{info.title}</p>
-                    {info.link ? (
-                      <a
-                        href={info.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-foreground font-medium hover:text-primary transition-colors text-sm md:text-base break-words"
-                      >
-                        {info.value}
-                      </a>
-                    ) : (
-                      <p className="text-foreground font-medium text-sm md:text-base">{info.value}</p>
-                    )}
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
 
             {/* Social Links */}
