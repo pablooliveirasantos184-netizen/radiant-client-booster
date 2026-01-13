@@ -69,7 +69,7 @@ const HeroSection = () => {
             href="https://wa.me/5522992497973?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20no%20Estúdio%20Sobrancelhas%20Perfeitas.%20Poderia%20me%20passar%20mais%20informações,%20por%20favor?"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 
+            className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 
                      rounded-full font-semibold transition-all duration-300 
                      shadow-lg hover:shadow-xl min-h-[52px] flex items-center justify-center"
           >
