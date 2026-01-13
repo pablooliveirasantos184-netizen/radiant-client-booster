@@ -46,16 +46,17 @@ const AboutSection = () => {
               Conheça Stella Souza
             </h2>
             <p className="text-body mb-6">
-              Apaixonada por realçar a beleza natural de cada mulher, comecei minha 
-              jornada na estética em 2008. Ao longo de 17 anos, desenvolvi técnicas 
-              exclusivas que valorizam os traços únicos de cada cliente.
+              Apaixonada por realçar a expressão e a identidade de cada mulher, iniciei 
+              minha trajetória profissional em 2008, com foco no cuidado e no embelezamento 
+              das sobrancelhas. Ao longo de 17 anos de experiência, aperfeiçoei técnicas 
+              que respeitam o formato do rosto e valorizam os traços naturais de cada cliente.
             </p>
             <p className="text-body mb-8">
               No <strong className="text-foreground">Estúdio Sobrancelhas Perfeitas</strong>, 
-              acreditamos que a beleza vai além da aparência — é sobre como você se
-              sente. Cada procedimento é realizado com dedicação, usando produtos de 
-              alta qualidade e técnicas atualizadas para garantir resultados que 
-              superam expectativas.
+              cada atendimento é pensado de forma personalizada, com atenção aos detalhes 
+              e resultados naturais. Trabalhamos exclusivamente com procedimentos voltados 
+              para sobrancelhas, utilizando produtos de alta qualidade e técnicas atualizadas 
+              para garantir harmonia, simetria e satisfação em cada resultado.
             </p>
 
             {/* Features Grid */}
