@@ -46,7 +46,7 @@ const Header = () => {
               src={logoStella} 
               alt="Logo Estúdio Sobrancelhas Perfeitas" 
               className={`h-16 md:h-20 w-auto object-contain transition-all duration-300 ${
-                isScrolled ? '' : 'brightness-0 invert'
+                isScrolled ? 'brightness-0' : 'brightness-0 invert'
               }`}
             />
           </a>
