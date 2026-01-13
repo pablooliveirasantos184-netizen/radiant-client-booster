@@ -82,7 +82,7 @@ const RightSidebar = ({ isOpen, onClose }: RightSidebarProps) => {
         {/* CTA Button */}
         <div className="p-6 border-t border-border">
           <a
-            href="https://wa.me/5522992497973?text=Olá! Vim pelo site e quero agendar um horário. Pode me ajudar?"
+            href="https://wa.me/5522992497973?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20no%20Estúdio%20Sobrancelhas%20Perfeitas.%20Poderia%20me%20passar%20mais%20informações,%20por%20favor?"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary w-full text-center block text-sm"

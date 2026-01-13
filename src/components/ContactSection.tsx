@@ -39,7 +39,7 @@ const ContactSection = () => {
       icon: Phone,
       title: 'WhatsApp',
       value: '(22) 99249-7973',
-      link: 'https://wa.me/5522992497973?text=Olá, Stella! Vim pelo site e quero agendar um horário. Pode me ajudar?',
+      link: 'https://wa.me/5522992497973?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20no%20Estúdio%20Sobrancelhas%20Perfeitas.%20Poderia%20me%20passar%20mais%20informações,%20por%20favor?',
     },
     {
       icon: MapPin,
