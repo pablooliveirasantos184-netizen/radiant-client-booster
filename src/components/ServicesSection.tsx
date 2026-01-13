@@ -6,6 +6,7 @@ import serviceFacial from '@/assets/service-facial.jpg';
 import serviceMicropigmentation from '@/assets/service-micropigmentation.jpg';
 import serviceHenna from '@/assets/service-henna.jpg';
 import serviceWaxing from '@/assets/service-waxing.jpg';
+import serviceSkinCleansing from '@/assets/service-skin-cleansing.jpg';
 
 const ServicesSection = () => {
   const ref = useRef(null);
@@ -31,7 +32,7 @@ const ServicesSection = () => {
       highlight: 'Resultado Duradouro',
     },
     {
-      image: serviceFacial,
+      image: serviceSkinCleansing,
       title: 'Limpeza de Pele',
       description: 'Tratamento profundo que remove impurezas, renova a pele e proporciona viço e luminosidade.',
       highlight: null,
