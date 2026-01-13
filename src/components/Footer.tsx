@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <h3 className="font-display text-2xl font-semibold mb-4">
-              Studio <span className="text-primary">Stella Souza</span>
+              Studio <span className="text-primary">Sobrancelhas Perfeitas</span>
             </h3>
             <p className="text-background/70 leading-relaxed mb-6 max-w-md">
               Há 17 anos transformando a autoestima de mulheres em Cabo Frio. 
@@ -96,7 +96,7 @@ const Footer = () => {
         <div className="border-t border-background/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-background/50 text-sm text-center md:text-left">
-              © {currentYear} Studio Stella Souza. Todos os direitos reservados.
+              © {currentYear} Studio Sobrancelhas Perfeitas. Todos os direitos reservados.
             </p>
             <p className="text-background/50 text-sm flex items-center gap-1">
               Feito com <Heart className="text-primary" size={14} /> em Cabo Frio
