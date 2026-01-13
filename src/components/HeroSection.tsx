@@ -64,7 +64,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="flex justify-center items-center px-2"
+          className="flex flex-col sm:flex-row justify-center items-center gap-4 px-2"
         >
           <button
             onClick={scrollToServices}
@@ -74,6 +74,14 @@ const HeroSection = () => {
           >
             Conheça Nossos Serviços
           </button>
+          <a
+            href="https://wa.me/5522992497973?text=Olá! Vim pelo site e quero agendar um horário. Pode me ajudar?"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto btn-primary text-center min-h-[52px] flex items-center justify-center"
+          >
+            Agendar Agora
+          </a>
         </motion.div>
 
         {/* Stats */}
