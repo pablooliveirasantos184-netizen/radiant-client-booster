@@ -50,7 +50,7 @@ const ContactSection = () => {
     {
       icon: Clock,
       title: 'Horário',
-      value: 'Seg a Sáb: 9h às 19h',
+      value: 'Seg à Sex: 10h às 19h',
       link: null,
     },
   ];
