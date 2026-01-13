@@ -28,16 +28,6 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container-custom text-center px-6 md:px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          <p className="text-primary-foreground/90 text-sm md:text-lg lg:text-xl mb-3 md:mb-4 tracking-widest uppercase font-light">
-            Especialista em Estética desde 2008
-          </p>
-        </motion.div>
-
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
