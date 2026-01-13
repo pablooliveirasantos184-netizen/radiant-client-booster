@@ -32,29 +32,29 @@ const Header = () => {
             : 'bg-transparent py-5'
         }`}
       >
-        <div className="container-custom flex items-center justify-between">
-          {/* Logo - Only visible when scrolled */}
+        <div className="container-custom flex items-center justify-center relative">
+          {/* Logo - Centered, only visible when scrolled */}
           <a
             href="#home"
             onClick={(e) => {
               e.preventDefault();
               scrollToSection('#home');
             }}
-            className={`relative z-10 flex items-center transition-all duration-500 ${
-              isScrolled ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4 pointer-events-none'
+            className={`flex items-center transition-all duration-500 ${
+              isScrolled ? 'opacity-100 scale-100' : 'opacity-0 scale-90 pointer-events-none'
             }`}
           >
             <img 
               src={logoStella} 
               alt="Logo Estúdio Sobrancelhas Perfeitas" 
-              className="h-16 md:h-20 w-auto object-contain brightness-0 drop-shadow-md"
+              className="h-14 md:h-16 w-auto object-contain brightness-0 drop-shadow-md"
             />
           </a>
 
-          {/* Menu Button - Right Side */}
+          {/* Menu Button - Right Side (absolute position) */}
           <button
             onClick={() => setIsSidebarOpen(true)}
-            className={`p-3 rounded-full transition-colors flex items-center gap-2 ${
+            className={`absolute right-4 md:right-8 p-3 rounded-full transition-colors flex items-center gap-2 ${
               isScrolled 
                 ? 'text-foreground hover:bg-muted' 
                 : 'text-primary-foreground hover:bg-primary-foreground/10'
